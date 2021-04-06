@@ -97,9 +97,8 @@
 
     	<header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="5" data-background="img/bg-default.webp" data-stellar-background-ratio="0.5">
 
-            <video class="bg-vid" poster="img/bg-default.webp" autoplay="" loop="" muted="">
-                <source src="video/video3.mp4" type="video/mp4">
-                <source src="video/video3.mp4" type="video/mp4" media="max-width: 40px"> 
+            <video id="video" class="bg-vid" poster="img/bg-default.webp" autoplay="" loop="" muted="">
+                <source src="video/video3.mp4" type="video/mp4"> 
             </video>
             
 
@@ -109,10 +108,10 @@
     					<h4>We Are Creative</h4>
                         <h1>Software Factory</h1>
                         <p>Expertos en desarrollo de Softwares a medida.</p>
-                        <a href="#0" class="butn butn-light mt-30" data-scroll-nav="1">
+                        <a style="width:180px" href="#0" class="butn butn-light mt-30" data-scroll-nav="1">
                             <span>Más Información</span>
                         </a>
-                        <a href="#0" class="butn butn-bg mt-30" data-scroll-nav="2">
+                        <a style="width:180px" href="#0" class="butn butn-bg mt-30" data-scroll-nav="2">
                             <span>Contacto</span>
                         </a>
     				</div>
@@ -226,24 +225,25 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <input id="form_name" type="text" name="nombre" placeholder="Nombre y Apellido">
-                                            <p class="text-danger mt-1">Tu nombre es requerido.</p>
+                                            <p style="display: none;" class="text-danger mt-1">Tu nombre es requerido.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <input id="form_email" type="email" name="email" placeholder="Email">
-                                            <p class="text-danger mt-1">Tu email es requerido.</p>
+                                            <p style="display: none;" class="text-danger mt-1">Tu email es requerido.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <input id="form_phone" type="number" name="telefono" placeholder="Teléfono">
-                                            <p class="text-danger mt-1">Tu teléfono es requerido.</p>
+                                            <p style="display: none;" class="text-danger mt-1">Tu teléfono es requerido.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea id="form_message" name="mensaje" placeholder="Consulta" rows="4" required="required"></textarea>
+                                            <textarea id="form_message" name="mensaje" placeholder="Consulta" rows="4"></textarea>
+                                            <p style="display: none;" class="text-danger mt-1">Un mensaje es requerido.</p>  
                                         </div>
                                     </div>
 
@@ -448,7 +448,7 @@
                     
                     <!-- Contact Info -->
 
-                    <div class="info bg-img col-md-6" data-overlay-dark="8" data-background="img/bg3.jpg">
+                    <div class="info bg-img col-md-6" data-overlay-dark="8" data-background="img/contact.jpg">
 
                         <div class="gradient">
 

@@ -1726,6 +1726,12 @@ footer p {
   }
 }
 @media screen and (max-width: 480px) {
+
+  /* Cambiamos el video */
+  .bg-vid{
+    
+  }
+
   .section-head h4 {
     font-size: 25px;
   }
