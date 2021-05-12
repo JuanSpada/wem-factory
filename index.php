@@ -97,8 +97,8 @@
 
     	<header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="5" data-background="img/bg-default.webp" data-stellar-background-ratio="0.5">
 
-            <video id="video" class="bg-vid" poster="img/bg-default.webp" autoplay="" loop="" muted="">
-                <source src="video/video3.mp4" type="video/mp4"> 
+            <video playsinline autoplay loop muted class="bg-vid" poster="" id="video">
+                <!-- <source src="video/video3.mp4" type="video/mp4"> -->
             </video>
             
 
@@ -134,10 +134,11 @@
                     <div class="intro offset-lg-1 col-lg-10 text-center mb-80">
                         <h3>Bienvenido/a</h3>
                         <h4>¿Quienés Somos y qué hacemos?</h4>
-                        <p>En We Management ofrecemos soluciones a medida de Desarrollo de Software e Infraestructura IT.</p>
+                        <p>En We Management ofrecemos soluciones a medida de Desarrollo de Software e Infraestructura IT. Adaptamos las últimas tendencias tecnológicas a las necesidades de cada cliente para llevarlo a otro nivel, entendiendo que su proyecto es nuestro proyecto y trabajando a la par. Estamos convencidos de que las mejores soluciones sólo se logran con un equipo de alta calidad humana y profesional. Somos mucho más que proveedores de nuestros clientes. SOMOS EL MISMO EQUIPO</p>
+                        <!-- <p>En We Management ofrecemos soluciones a medida de Desarrollo de Software e Infraestructura IT.</p>
                         <p>Adaptamos las últimas tendencias tecnológicas a las necesidades de cada cliente para llevarlo a otro nivel, entendiendo que su proyecto es nuestro proyecto y trabajando a la par.</p> 
                         <p>Estamos convencidos de que las mejores soluciones sólo se logran con un equipo de alta calidad humana y profesional.</p> 
-                        <p>Somos mucho más que proveedores de nuestros clientes. SOMOS EL MISMO EQUIPO</p>
+                        <p>Somos mucho más que proveedores de nuestros clientes. SOMOS EL MISMO EQUIPO</p> -->
                     </div>
 
                     <div class="col-lg-4">
@@ -325,6 +326,58 @@
                         <div class="item mb-md50">
                             <i class="icon fas fa-pencil-ruler"></i>
                             <h6>Diseño</h6>
+                            <p>Se utiliza un template que mejor se adecúe a las necesidades del proyecto y el negocio. Si bien un template cumple con los objetivos visuales necesarios, se podrá editar lo que se necesite en términos de diseño para mejorar incluso más el producto.</p>
+                            <br>
+                            <p>O se diseña un sitio de cero en base a los requerimientos del cliente.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 bord">
+                        <div class="item mb-md50">
+                            <i class="icon fas fa-file-code"></i>
+                            <h6>Desarrollo</h6>
+                            <p>Se realizarán sprints internos semanales y también habrán reuniones con el cliente para presentar los avances y delinear las prioridades de la próxima iteración. Las reuniones aseguran los grados de avance, para que el cliente pueda evidenciar el trabajo realizado y aportar comentarios y correcciones respecto del producto.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item mb-md50">
+                            <i class="icon fas fa-layer-group"></i>
+                            <h6>Prueba</h6>
+                            <p>Con la etapa de desarrollo terminada se pone a prueba el sistema para verificar el cumplimiento de los objetivos iniciales. Esta etapa consiste en probar cuántas mayores interacciones se puede con el sistema a fin de encontrar las inconsistencias a mejorar.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="col-lg-4 col-md-6">
+                        <!-- <div class="item mb-md50">
+                            <span class="icon icon-basic-picture"></span>
+                            <h6>Retina Ready</h6>
+                            <p>Lorem Ipsum simply dummy text of the printing and type setting industry when an unknown printing simply dummy</p>
+                        </div> -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 bord">
+                        <div class="item mb-md50">
+                            <i class="icon fas fa-hammer"></i>
+                            <h6>Mantenimiento</h6>
+                            <p>El mantenimiento del sistema es fundamental para cumplir con el crecimiento de expectativa del sistema. A medida que los usuarios proporcionen devoluciones y feedbacks sobre el sistema, se podrán ir corrigiendo funcionalidades que tengan la capacidad de mejorarse.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <!-- <div class="item">
+                            <span class="icon icon-basic-gear"></span>
+                            <h6>Custom Support</h6>
+                            <p>Lorem Ipsum simply dummy text of the printing and type setting industry when an unknown printing simply dummy</p>
+                        </div> -->
+                    </div>
+
+                    <!-- <div class="col-lg-4 col-md-6">
+                        <div class="item mb-md50">
+                            <i class="icon fas fa-pencil-ruler"></i>
+                            <h6>Diseño</h6>
                             <p>El equipo de trabajo cuenta con certificación UX/UI y con las herramientas necesarias respecto de diseño para ofrecer un producto final de calidad.</p>
                             <br>
                             <p>Se utiliza un template que mejor se adecúe a las necesidades del proyecto y el negocio. Si bien un template cumple con los objetivos visuales necesarios, se podrá editar lo que se necesite en términos de diseño para mejorar incluso más el producto.</p>
@@ -357,7 +410,7 @@
                             <h6>Mantenimiento</h6>
                             <p>El mantenimiento del sistema es fundamental para cumplir con el crecimiento de expectativa del sistema. A medida que los usuarios proporcionen devoluciones y feedbacks sobre el sistema, se podrán ir corrigiendo funcionalidades que tengan la capacidad de mejorarse.</p>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="d-flex justify-content-center">
@@ -425,8 +478,8 @@
                     
                     <div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 text-center">
                         <h4>Unite a nuestro Newsletter</h4>
-                        <form>
-                            <input type="email" name="email" placeholder="Correo Electrónico" required>
+                        <form id="suscriber-form" method="post">
+                            <input type="suscriber_email" name="suscriber_email" placeholder="Correo Electrónico" required>
                             <button type="submit" class="butn butn-bg"><span>Suscribirse</span></button>
                         </form>
                     </div>
@@ -590,6 +643,8 @@
         
         <!-- Contact -->
         <script src="js/contact.js"></script>
+        <!-- Suscriber -->
+        <script src="js/suscriber.js"></script>
         <!-- google map api -->
         <!-- <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7lXLHQgaGdP3IvMPi1ej0B9JHUbcqB0&callback=initMap">

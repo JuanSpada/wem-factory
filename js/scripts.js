@@ -14,8 +14,8 @@ $(function () {
 
   // cambiamos el video en mobile
   var screenWidth = $(window).width();
-  if (screenWidth < 440){
-      $('#video').attr("src", "video/video3-m.mp4");
+  if (screenWidth < 460){
+    $('#video').attr("src", "video/video3-m.mp4");
   } else {
     $('#video').attr("src", "video/video3.mp4");
   }
